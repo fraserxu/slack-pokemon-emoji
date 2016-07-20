@@ -3,6 +3,7 @@ slack-pokemon-emoji
 
 A tool to upload all the pokemon to slack emoji.
 
+![slack-pokemon-emoji](https://cloud.githubusercontent.com/assets/1183541/16988491/ea919e58-4ed3-11e6-95cd-312fd8f108a9.png)
 
 ### How it works?
 
@@ -54,11 +55,13 @@ A cli tool will coming soon.
 ### Tools
 
 * `gm` A nodejs wrapper for imageMagick, used for resizing image
-* `hyperquest` steam based http request utils
-* `cheerio` parse html text on server side
-* `form-data` build form data and upload to slack
+* `hyperquest` A nodejs stream based http request utils
+* `cheerio` A nodejs module to parse html text on server side
+* `form-data` A nodejs module to build form data and upload to slack
 
 Slack does not provide a upload emoji api, and this tool is inspired by [slack-emojinator](https://github.com/smashwilson/slack-emojinator).
+
+Some of the code here use ES6 syntax so you might need nodejs 4.*.* to run the code.
 
 ### License
 MIT
