@@ -1,0 +1,19 @@
+{
+  "name": "poke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "form-data": "^1.0.0-rc4",
+    "glob": "^7.0.5",
+    "gm": "^1.22.0",
+    "hyperquest": "^2.0.0",
+    "through2": "^2.0.1"
+  }
+}
