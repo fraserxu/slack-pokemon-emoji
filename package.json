@@ -1,12 +1,23 @@
 {
-  "name": "poke",
+  "name": "slack-pokemon-emoji",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A tool to upload all the pokemon to slack emoji.",
+  "main": "uploader.js",
+  "bin": "./cli.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fraserxu/slack-pokemon-emoji.git"
   },
-  "author": "",
+  "keywords": [
+    "pokemon",
+    "slack",
+    "emoji"
+  ],
+  "bugs": {
+    "url": "https://github.com/fraserxu/slack-pokemon-emoji/issues"
+  },
+  "homepage": "https://github.com/fraserxu/slack-pokemon-emoji",
+  "author": "Fraser Xu",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.20.0",
@@ -14,6 +25,7 @@
     "glob": "^7.0.5",
     "gm": "^1.22.0",
     "hyperquest": "^2.0.0",
+    "minimist": "^1.2.0",
     "through2": "^2.0.1"
   }
 }

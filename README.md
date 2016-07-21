@@ -5,6 +5,29 @@ A tool to upload all the pokemon to slack emoji.
 
 ![slack-pokemon-emoji](https://cloud.githubusercontent.com/assets/1183541/16988491/ea919e58-4ed3-11e6-95cd-312fd8f108a9.png)
 
+### Installation
+
+```sh
+$ npm install slack-pokemon-emoji -g
+```
+
+### Requirement
+
+* `team` Your team name.
+* `cookie` Slack does not have an api to upload emoji, so we have to emulate a browser environment to pass the cookie to our request. You can find the cookie from the Chrome devtools **Networks** tab, and it's under **Header** tab of any request.
+
+![cookie](https://cloud.githubusercontent.com/assets/1183541/17016371/3c1e1f46-4f72-11e6-8950-1a4750c0ce55.png)
+
+### Usage
+
+```sh
+$ slack-pokemon-emoji TEAM "COOKIE"
+# or
+$ slack-pokemon-emoji -t TEAM -c "COOKIE"
+# or
+$ slack-pokemon-emoji team=TEAM cookie=COOKIE
+```
+
 ### How it works?
 
 #### Fetch pokemon images from http://www.pokemon.com/us/pokedex/
@@ -46,11 +69,6 @@ pokemons.forEach(function (pokemon) {
 ```sh
 $ node uploader.js
 ```
-
-Note that you will need to input slack **team name** and paste your **browser cookies** to the file.
-
-A cli tool will coming soon.
-
 
 ### Tools
 
