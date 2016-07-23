@@ -7,6 +7,12 @@ A tool to upload all the pokemon to slack emoji.
 
 ### Installation
 
+Install Docker:
+https://docs.docker.com/engine/installation/
+
+or
+
+Install Package Locally
 ```sh
 $ npm install slack-pokemon-emoji -g
 ```
@@ -20,6 +26,12 @@ $ npm install slack-pokemon-emoji -g
 
 ### Usage
 
+Docker:
+```
+./run-docker.sh TEAM "COOKIE"
+```
+
+Local Install:
 ```sh
 $ slack-pokemon-emoji TEAM "COOKIE"
 # or
